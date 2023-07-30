@@ -4,5 +4,15 @@ const ingredients = [
   'Garlic',
   'Tomatos',
   'Herbs',
-  'Condiments',
+  'Condiments'
 ];
+
+const list = document.getElementById('ingredients');
+const liElements = ingredients.map((ingredient) => {
+  const li = document.createElement('li');
+  li.textContent = ingredient;
+  li.classList.add('item');
+  return li;
+});
+
+list.append(...liElements);
