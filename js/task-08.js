@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
       email,
       password
     };
+    
+    console.log(formData);
+
     form.reset();
   });
 });
